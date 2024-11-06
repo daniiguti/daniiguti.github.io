@@ -83,6 +83,7 @@ h2 {
     opacity: 1;
     transform: translateY(0);
 }  
+
 /* Sección Header */
 .foto-perfil{
     width: 220px;          
@@ -119,13 +120,21 @@ h2 {
     z-index: 2; 
     color: white; 
 }
+
 /* Sección Sobre Mí */
 .text-sobre-mi{
     text-align: center; 
-    margin-top: 27px;
-    font-size: 19px;
+    margin-top: 30px;
+    font-size: 16px;
 }
+.title-sobre-mi{
+    margin-top: 25px;
+}
+
 /* Sección Experiencia Laboral */
+.title-experiencia{
+    margin-top: -140px;
+}
 .timeline {
     position: relative;
     width: 100%;
@@ -191,6 +200,52 @@ h2 {
     text-align: justify;
     margin-top: 15px;
 }
+
+/* Sección Educación *como tiene el mismo formato que experiencia laboral, la mayoría de los diseños se han reutilizado */
+.title-educacion{
+    margin-top: -90px;
+}
+
+/* Sección Cursos*/
+.title-cursos{
+    margin-top: -80px;
+    margin-bottom: 55px;
+}
+.cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.curso{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.tecnologia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagen-tecnologia{
+    border-radius: 50%;    
+    width: 60px;          
+    height: 60px;        
+}
+.entidad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagen-entidad{
+    border-radius: 50%;    
+    width: 60px;          
+    height: 60px;        
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .timeline {
