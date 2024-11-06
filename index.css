@@ -123,9 +123,14 @@ h2 {
 
 /* Sección Sobre Mí */
 .text-sobre-mi{
-    text-align: center; 
     margin-top: 30px;
     font-size: 16px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left; 
 }
 .title-sobre-mi{
     margin-top: 25px;
@@ -133,7 +138,7 @@ h2 {
 
 /* Sección Experiencia Laboral */
 .title-experiencia{
-    margin-top: -140px;
+    margin-top: -50px;
 }
 .timeline {
     position: relative;
