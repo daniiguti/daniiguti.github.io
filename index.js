@@ -11,7 +11,7 @@ function main() {
       }
     });
   }
-  
+ 
   window.addEventListener('scroll', mostrarSecciones);
 }
   
