@@ -58,6 +58,9 @@ h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 } 
+p {
+    margin: 10px 0; 
+}
 
 /* Responsive */
 @media (min-width: 768px) {
@@ -211,43 +214,60 @@ h2 {
     margin-top: -90px;
 }
 
-/* Sección Cursos*/
-.title-cursos{
+/* Sección Cursos */
+.title-cursos {
     margin-top: -80px;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
+    text-align: center;
 }
-.cursos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    justify-content: space-around;
-}
-.curso{
+.cursos {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: -200px; 
+    margin-top: 5px;
+}
+.curso {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
-.tecnologia{
+.tecnologia,
+.entidad {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
 }
-.imagen-tecnologia{
-    border-radius: 50%;    
-    width: 60px;          
-    height: 60px;        
+.imagen-tecnologia,
+.imagen-entidad {
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
 }
-.entidad{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.imagen-entidad{
-    border-radius: 50%;    
-    width: 60px;          
-    height: 60px;        
+
+
+/* Consultas de medios para pantallas más grandes */
+@media (min-width: 768px) {
+    .cursos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .curso {
+        flex: 1;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    .imagen-tecnologia,
+    .imagen-entidad {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 
