@@ -307,3 +307,121 @@ p {
     }
 }
 
+/* Sección proyectos propios */
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.proyecto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.imagen-aplicacion,
+.imagen-aplicacion-derecha {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 600px;
+}
+.contenido-derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    max-width: 600px;
+}
+.nombre-app,
+.nombre-app-derecha {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.descripcion-app,
+.descripcion-app-derecha {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.enlace-github,
+.enlace-github-derecha {
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.enlace-github:hover,
+.enlace-github-derecha:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+    .contenido,
+    .contenido-derecha {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .imagen-aplicacion,
+    .imagen-aplicacion-derecha {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+    .nombre-app,
+    .nombre-app-derecha {
+        font-size: 16px;
+    }
+    .descripcion-app,
+    .descripcion-app-derecha {
+        font-size: 13px;
+    }
+    .enlace-github,
+    .enlace-github-derecha {
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px) {
+    .proyectos {
+        padding: 10px;
+    }
+    .proyecto {
+        padding: 10px;
+    }
+    .imagen-aplicacion,
+    .imagen-aplicacion-derecha {
+        width: 100px;
+    }
+    .nombre-app,
+    .nombre-app-derecha {
+        font-size: 14px;
+    }
+    .descripcion-app,
+    .descripcion-app-derecha {
+        font-size: 12px;
+    }
+    .enlace-github,
+    .enlace-github-derecha {
+        font-size: 12px;
+    }
+}
