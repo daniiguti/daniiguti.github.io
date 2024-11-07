@@ -61,8 +61,6 @@ h2 {
 p {
     margin: 10px 0; 
 }
-
-/* Responsive */
 @media (min-width: 768px) {
     h1 {
         font-size: 3rem;
@@ -208,70 +206,6 @@ p {
     text-align: justify;
     margin-top: 15px;
 }
-
-/* Sección Educación *como tiene el mismo formato que experiencia laboral, la mayoría de los diseños se han reutilizado */
-.title-educacion{
-    margin-top: -90px;
-}
-
-/* Sección Cursos */
-.title-cursos {
-    margin-top: -80px;
-    margin-bottom: 35px;
-    text-align: center;
-}
-.cursos {
-    display: flex;
-    flex-direction: column;
-    gap: -200px; 
-    margin-top: 5px;
-}
-.curso {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-.tecnologia,
-.entidad {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.imagen-tecnologia,
-.imagen-entidad {
-    border-radius: 50%;
-    width: 50px; 
-    height: 50px;
-}
-
-
-/* Consultas de medios para pantallas más grandes */
-@media (min-width: 768px) {
-    .cursos {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .curso {
-        flex: 1;
-        max-width: 400px;
-        margin: 10px;
-    }
-
-    .imagen-tecnologia,
-    .imagen-entidad {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-
-/* Responsive */
 @media (max-width: 768px) {
     .timeline {
         padding: 10px 0;
@@ -314,3 +248,62 @@ p {
         padding: 10px; 
     }
 }
+
+/* Sección Educación *como tiene el mismo formato que experiencia laboral, la mayoría de los diseños se han reutilizado */
+.title-educacion{
+    margin-top: -90px;
+}
+
+/* Sección Cursos */
+.title-cursos {
+    margin-top: -80px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.cursos {
+    display: flex;
+    flex-direction: column;
+    gap: -200px; 
+    margin-top: 5px;
+}
+.curso {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.tecnologia,
+.entidad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imagen-tecnologia,
+.imagen-entidad {
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+}
+@media (min-width: 768px) {
+    .cursos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .curso {
+        flex: 1;
+        max-width: 400px;
+        margin: 10px;
+    }
+
+    .imagen-tecnologia,
+    .imagen-entidad {
+        width: 60px;
+        height: 60px;
+    }
+}
+
