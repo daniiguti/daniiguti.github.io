@@ -74,7 +74,6 @@ p {
 /* Elementos personalizados */
 .seccion {
     padding: 4rem 2rem;
-    min-height: 100vh;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
