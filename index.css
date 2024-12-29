@@ -226,12 +226,17 @@ p {
 .title-puesto {
     font-size: 17px;
     font-weight: bold;
+    text-align: left;
 }
 .tiempo {
     font-size: 15px;
     font-style: italic;
     color: #555;
     margin-top: 5px;
+    text-align: left;
+}
+.instituto, .nota-media{
+    text-align: left;
 }
 .descripcion {
     font-size: 13px;
