@@ -1,4 +1,8 @@
 function main() {
+  document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+  });
+
   const menuToggle = document.querySelector('.menu-toggle');
   const navList = document.querySelector('.nav-list');
   const navLinks = document.querySelectorAll('.nav-list a');
