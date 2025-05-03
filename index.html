@@ -17,7 +17,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kaushan+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <section id="contacto" class="dani">
+        <header>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#cursos">Certificaciones</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <div class="header-content">
             <img src="images/foto_perfil.jpg" alt="Foto de perfil" class="foto-perfil">
             <p class="nombre-completo">Daniel Gutiérrez Baena</p>
@@ -28,9 +43,10 @@
                 <a href="https://es.stackoverflow.com/users/323944/daniguti" target="_blank"><img src="images/stack-overflow.png" alt="Icono Stackoverflow" class="little-icon"></a>
             </div>
         </div>
-    </header>
+    </section>
+
     <section id="sobre-mi" class="seccion fade-in">
-        <h2 class="title-sobre-mi">SOBRE MÍ</h2>
+        <h2 class="title-sobre-mi">Sobre mí</h2>
         <p class="text-sobre-mi">
             ¡Hola!👋🏻 Soy Dani, un apasionado de la informática y del desarrollo de aplicaciones multiplataforma👨🏻‍💻. A mis 21 años, he completado un grado superior en esta materia y estoy trabajando en hiberus, con las tecnologías de Liferay y Java.
             <br><br>
@@ -40,136 +56,153 @@
             <br><br>
             Soy un programador muy enfocado y riguroso en el desarrollo de aplicaciones🔨. Me gusta trabajar en proyectos prácticos que involucren la resolución de problemas reales. Además, soy muy adaptable a las nuevas tecnologías y estoy constantemente actualizando mis conocimientos📈.
             <br><br>
-            Además de mi pasión por la tecnología 💻, disfruto de actividades que me desafían a pensar de manera innovadora, como resolver acertijos 🧩 o practicar deportes estratégicos 🏆. Mi objetivo es seguir aprendiendo y, en el futuro, liderar proyectos que fusionen creatividad 🎨 y tecnología 🤖 para mejorar la vida de las personas.            
-            <br><br>
             Me considero un joven talentoso y comprometido con mi trabajo. Estoy seguro de que puedo ser un gran activo para cualquier empresa🏢 que busque un programador innovador, dedicado y con un enfoque práctico✍🏻 en el desarrollo de software.
-            <br><br>
-            <center>“No busques el reconocimiento, busca hacer un trabajo que lo merezca”✨.</center>
+            <br>
+            <center style="font-size: 19px; font-weight: bold;">“No busques el reconocimiento, busca hacer un trabajo que lo merezca”✨.</center>
         </p>
     </section>
+
     <section id="experiencia" class="seccion fade-in">
-        <h2 class="title-experiencia">EXPERIENCIA LABORAL</h2>
-        <div class="timeline">
-            <div class="entry">
-                <div class="vertical-line"></div>
-                <img src="images/maleta_azul.png" alt="Maleta de trabajo" class="maleta-trabajo">
-                <div class="content-box">
-                    <div class="content">
-                        <p class="title-puesto">Full Stack Developer</p>
-                        <p style="text-align: left;">Hiberus</p>
-                        <p class="tiempo">Junio 2023 - Actualidad</p>
-                        <p class="descripcion">
-                            • Primer proyecto: Desarrollo Full Stack utilizando Angular para el front-end, Spring para el back-end, y Oracle como base de datos.
-                            <br>
-                            • Segundo y tercer proyecto: Implementación de soluciones con Liferay, utilizando FreeMarker como gestor de plantillas y Java para la lógica de negocio.
-                            <br><br>
-                            *Desarrollé una alta capacidad para comprender y adaptarme rápidamente a arquitecturas personalizadas, y gané experiencia trabajando bajo metodologías ágiles como Scrum y Kanban.
-                            <br><br>
-                            Mantuve una relación directa con el cliente, quien también actuaba como líder de proyecto. En el primer y segundo proyecto, formé parte de un equipo de 3 personas junto con el líder del cliente, mientras que en el tercer proyecto trabajé en un equipo de 2 personas, también con el líder del cliente.
-                        </p>
-                    </div>
+        <h2 class="title-experiencia">Experiencia</h2>
+        <div class="contenido-experiencia">
+            <div class="content-box">
+                <div class="content">
+                    <p class="title-puesto">Full Stack Developer</p>
+                    <img src="images/hiberus_logo.jpeg" alt="Logo Hiberus" class="logo-trabajo">
+                    <p class="empresa">Hiberus</p>
+                    <p class="tiempo">Junio 2023 - Actualidad</p>
+                    <p class="descripcion">
+                        <strong>• Primer proyecto:</strong> Desarrollo Full Stack utilizando Angular para el front-end, Spring para el back-end, y Oracle como base de datos.
+                        <br>
+                        <strong>• Segundo y tercer proyecto (actualidad):</strong> Implementación de soluciones con Liferay, utilizando FreeMarker como gestor de plantillas y Java para la lógica de negocio.
+                        <br><br>
+                        *Desarrollé una alta capacidad para comprender y adaptarme rápidamente a <strong>arquitecturas personalizadas</strong>, y gané experiencia trabajando bajo <strong>metodologías ágiles</strong> como Scrum y Kanban.
+                        <br><br>
+                        *Mantuve una <strong>relación directa</strong> con el <strong>cliente</strong>, quien también actuaba como líder de proyecto.
+                    </p>
                 </div>
             </div>
-            <div class="entry">
-                <div class="vertical-line"></div>
-                <img src="images/maleta_azul.png" alt="Maleta de trabajo" class="maleta-trabajo">
-                <div class="content-box">
-                    <div class="content">
-                        <p class="title-puesto">Becario</p>
-                        <p style="text-align: left;">Hiberus</p>
-                        <p class="tiempo">Marzo 2023 - Junio 2023</p>
-                        <p class="descripcion">
-                            • Participé en un curso intensivo de especialización en Java y Spring, diseñado para abordar las necesidades y requisitos de proyectos reales y actuales, donde obtuve un reconocimiento por mi desempeño destacado.
-                            <br>
-                            • Adquirí un profundo conocimiento de Spring Boot y Spring MVC, con un enfoque práctico orientado a la implementación en entornos empresariales.
-                            <br>
-                            • Desarrollé habilidades en la creación de aplicaciones robustas y escalables, aplicando principios de arquitectura limpia y buenas prácticas de desarrollo.
-                            <br><br>
-                            Este curso me proporcionó una sólida base técnica que me preparó para enfrentar desafíos en proyectos Full Stack en entornos profesionales.
-                        </p>
-                    </div>
+
+            <div class="content-box">
+                <div class="content">
+                    <p class="title-puesto">Becario</p>
+                    <img src="images/hiberus_logo.jpeg" alt="Logo Hiberus" class="logo-trabajo">
+                    <p class="empresa">Hiberus</p>
+                    <p class="tiempo">Marzo 2023 - Junio 2023</p>
+                    <p class="descripcion">
+                        • Participé en un <strong>curso</strong> intensivo de especialización en <strong>Java y Spring</strong>, diseñado para abordar las necesidades y requisitos de proyectos reales y actuales.
+                        <br>
+                        • Adquirí un profundo conocimiento de <strong>Spring Boot y Spring MVC</strong>, con un enfoque práctico orientado a la implementación en entornos empresariales.
+                        <br>
+                        • Desarrollé habilidades en la creación de aplicaciones robustas y escalables, aplicando principios de arquitectura limpia y buenas prácticas de desarrollo.
+                        <br><br>
+                        *Este curso me proporcionó una sólida base técnica que me preparó para enfrentar desafíos en proyectos Full Stack en entornos profesionales.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id="experiencia" class="seccion fade-in">
-        <h2 class="title-educacion">EDUCACIÓN</h2>
-        <div class="timeline">
-            <div class="entry">
-                <div class="vertical-line"></div>
-                <img src="images/libro-azul.png" alt="Libro" class="maleta-trabajo">
-                <div class="content-box">
-                    <div class="content">
-                        <p class="title-puesto">Técnico superior en desarrollo de aplicaciones multiplataforma</p>
-                        <p class="instituto">IES Francisco Ayala</p>
-                        <p class="tiempo">Septiembre 2021 - Marzo 2023</p>
-                        <p class="nota-media">Nota Media: 10</p>
-                        <p class="descripcion">
-                            En el Grado Superior de Desarrollo de Aplicaciones Multiplataforma, adquirí sólidos conocimientos en programación con <strong>Java</strong>, tanto para <strong>aplicaciones de escritorio</strong> como para el desarrollo de <strong>aplicaciones Android</strong>. Aprendí sobre <strong>bases de datos</strong>, incluyendo su diseño y gestión, y profundicé en la creación de <strong>aplicaciones web</strong>. También abordé la gestión de <strong>procesos en segundo plano</strong>, optimizando el rendimiento y eficiencia de las aplicaciones. 
-                        </p>
-                    </div>
+    <section id="educacion" class="seccion fade-in">
+        <h2 class="title-educacion">Educación</h2>
+        <div class="contenido-experiencia">
+            <div class="content-box">
+                <div class="content">
+                    <center><img src="images/logo_ayala.jpg" alt="Logo Hiberus" class="logo-educacion"></center>
+                    <p class="title-colegio">Técnico superior en desarrollo de aplicaciones multiplataforma</p>
+                    <p class="instituto">IES Francisco Ayala</p>
+                    <p class="tiempo">Septiembre 2021 - Marzo 2023</p>
+                    <p class="nota-media">Nota Media: 10</p>
+                    <p class="descripcion">
+                        En el Grado Superior de Desarrollo de Aplicaciones Multiplataforma, adquirí sólidos conocimientos en programación con <strong>Java</strong>, tanto para <strong>aplicaciones de escritorio</strong> como para el desarrollo de <strong>aplicaciones Android</strong>. Aprendí sobre <strong>bases de datos</strong>, incluyendo su diseño y gestión, y profundicé en la creación de <strong>aplicaciones web</strong>. También abordé la gestión de <strong>procesos en segundo plano</strong>, optimizando el rendimiento y eficiencia de las aplicaciones. 
+                    </p>
                 </div>
             </div>
-            <div class="entry">
-                <div class="vertical-line"></div>
-                <img src="images/libro-azul.png" alt="Libro" class="maleta-trabajo">
-                <div class="content-box">
-                    <div class="content">
-                        <p class="title-puesto">Bachillerato</p>
-                        <p class="instituto">IES Diego de Siloé</p>
-                        <p class="tiempo">Septiembre 2019 - Junio 2021</p>
-                        <p class="nota-media">Nota Media: 8,2</p>
-                        <p class="descripcion">
-                            En Bachillerato fue donde descubrí el mundo de la programación, aprendiendo los conceptos básicos que me introdujeron en este ámbito. Además, asignaturas como matemáticas, física y dibujo técnico me ayudaron a desarrollar una mentalidad analítica y estructurada, habilidades fundamentales para mi formación posterior en tecnología.
-                        </p>
-                    </div>
+           
+            <div class="content-box">
+                <div class="content">
+                    <center><img src="images/logo_siloe.jpg" alt="Logo Hiberus" class="logo-educacion"></center>
+                    <p class="title-colegio">Bachillerato</p>
+                    <p class="instituto">IES Diego de Siloé</p>
+                    <p class="tiempo">Septiembre 2019 - Junio 2021</p>
+                    <p class="nota-media">Nota Media: 9</p>
+                    <p class="descripcion">
+                        En Bachillerato fue donde descubrí el mundo de la programación, aprendiendo los conceptos básicos que me introdujeron en este ámbito. Además, asignaturas como matemáticas, física y dibujo técnico me ayudaron a desarrollar una mentalidad analítica y estructurada, habilidades fundamentales para mi formación posterior en tecnología.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="habilidades" class="seccion fade-in">
+        <h2 class="title-habilidades">Frontend skills</h2>
+        <div class="contenido-habilidades">
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_angular.png" alt="Logo Angular" class="logo-habilidad">
+                <span>Angular</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_liferay.png" alt="Logo Liferay" class="logo-habilidad">
+                <span>Liferay</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_android.png" alt="Logo Android" class="logo-habilidad">
+                <span>Android</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_html-css-js.png" alt="Logo HTML, CSS & JavaScript" class="logo-habilidad">
+                <span>HTML, CSS & JavaScript</span>
+            </div>
+        </div> 
+        <br><br><br>
+        <h2 class="title-habilidades">Backend skills</h2>
+        <div class="contenido-habilidades">
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_spring.png" alt="Logo Spring" class="logo-habilidad">
+                <span>Spring</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_java.png" alt="Logo Java" class="logo-habilidad">
+                <span>Java</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_firebase.png" alt="Logo Firebase" class="logo-habilidad">
+                <span>Firebase</span>
+            </div>
+            <div class="caja-habilidad">
+                <img src="images/skills/logo_bdd.png" alt="Logo BDD" class="logo-habilidad">
+                <span>BDD</span>
+            </div>
+        </div> 
+    </section>
+
     <section id="cursos" class="seccion fade-in">
-        <h2 class="title-cursos">CURSOS Y CERTIFICACIONES</h2>
+        <h2 class="title-cursos">Cursos y certificaciones</h2>
         <div class="cursos">
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/agile.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Certified Scrum Product Owner® (SCPO®) y Certified Scrum Professional® (CSP)</strong></p>
-                </div>
-                <div class="entidad">
                     <img src="images/empresa-scrum.png" alt="Imagen-Entidad" class="imagen-entidad">
-                    <p style="margin-left: 20px; margin-top: 20px; font-weight: bold;"><a href="https://scrummanager.com/website/" target="_blank">Scrum Manager</a></p>
-                </div>    
-                <p style="margin-top: 11px;"><em>Scrum · Metodologías ágiles</em></p>
-                <a href="archivos/diploma-scrum.pdf" download="diploma-scpo-csp.pdf" target="_blank" class="btn btn-primary btn-sm mt-3">
+                    <p style="margin-left: 20px; margin-top: 10px;">Certified Scrum Product Owner® (SCPO®) y Certified Scrum Professional® (CSP)</p>
+                </div>
+                <a href="archivos/diploma-scrum.pdf" download="diploma-scpo-csp.pdf" target="_blank" >
                     <i class="fas fa-download"></i> Diploma
                 </a>
             </div>
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/agile.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Metodología de gestión y desarrollo <br>de proyectos de software con Scrum</strong></p>
-                </div>
-                <div class="entidad">
                     <img src="images/pue.jpg" alt="Imagen-Entidad" class="imagen-entidad" style="margin-top: 16px;">
-                    <p style="margin-left: 20px; margin-top: 20px; font-weight: bold;"><a href="https://www.pue.es" target="_blank">PUE</a></p>
-                </div>    
-                <p style="margin-top: 16px;"><em>Metodologías ágiles · Scrum · Metodologías Agile y Waterfall</em></p>
-                <a href="archivos/diploma-scrum-pue.pdf" download="diploma-scrum-pue.pdf" target="_blank" class="btn btn-primary btn-sm mt-3" style="margin-top: -5px !important;">
+                    <p style="margin-left: 20px; margin-top: 10px;">Metodología de gestión y desarrollo de proyectos de software con Scrum</p>
+                </div>
+                <a href="archivos/diploma-scrum-pue.pdf" download="diploma-scrum-pue.pdf" target="_blank">
                     <i class="fas fa-download"></i> Diploma
                 </a>
             </div>
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/spring.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Curso desarrollo de aplicaciones <br>con Spring</strong></p>
-                </div>
-                <div class="entidad">
                     <img src="images/pue.jpg" alt="Imagen-Entidad" class="imagen-entidad" style="margin-top: 16px;">
-                    <p style="margin-left: 20px; margin-top: 20px; font-weight: bold;"><a href="https://www.pue.es" target="_blank">PUE</a></p>
-                </div>    
-                <p style="margin-top: 16px;"><em>Java · Spring Framework · Spring Boot · Spring MVC</em></p>
-                <a href="archivos/diploma-scrum-pue.pdf" download="diploma-scrum-pue.pdf" target="_blank" class="btn btn-primary btn-sm mt-3" style="margin-top: -5px !important;">
+                    <p style="margin-left: 20px; margin-top: 10px;">Curso desarrollo de aplicaciones con Spring</p>
+                </div>
+                <a href="archivos/diploma-scrum-pue.pdf" download="diploma-scrum-pue.pdf" target="_blank">
                     <i class="fas fa-download"></i> Diploma
                 </a>
             </div>
@@ -177,50 +210,36 @@
         <div class="cursos">
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/spring.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Spring Boot y Spring MVC 5: Creando una aplicación con Spring Boot y Spring MVC</strong></p>
-                </div>
-                <div class="entidad">
                     <img src="images/ow.jpg" alt="Imagen-Entidad" class="imagen-entidad">
-                    <p style="margin-left: 20px; margin-top: 20px;  font-weight: bold;"><a href="https://openwebinars.net" target="_blank">OpenWebinars</a></p>
-                </div>    
-                <p style="margin-top: 11px;"><em>Spring MVC · Spring Boot · Spring Framework</em></p>
-                <a href="https://openwebinars.net/cert/P2Na" target="_blank" class="btn btn-primary btn-sm mt-3">
+                    <p style="margin-left: 20px; margin-top: 10px;">Spring Boot y Spring MVC 5: Creando una aplicación con Spring Boot y Spring MVC</p>
+                </div>
+                <a href="https://openwebinars.net/cert/P2Na" target="_blank">
                     <i class="fas fa-download"></i> Credencial
                 </a>
             </div>
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/html-css.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Curso de HTML5 y CSS3</strong></p>
-                </div>
-                <div class="entidad" style="margin-top: 20px;">
                     <img src="images/ow.jpg" alt="Imagen-Entidad" class="imagen-entidad">
-                    <p style="margin-left: 20px; margin-top: 20px; font-weight: bold;"><a href="https://openwebinars.net" target="_blank">OpenWebinars</a></p>
-                </div>    
-                <p style="margin-top: 28px;"><em>HTML · Hojas de estilos en cascada (CSS)</em></p>
-                <a href="https://openwebinars.net/cert/DR2L" target="_blank" class="btn btn-primary btn-sm mt-3" style="margin-top: 17px !important;">
+                    <p style="margin-left: 20px; margin-top: 10px;">Curso de HTML5, CSS3 y JavaScript avanzado</p>
+                </div>
+                <a href="https://openwebinars.net/cert/DR2L" target="_blank">
                     <i class="fas fa-download"></i> Credencial
                 </a>
             </div>
             <div class="curso">
                 <div class="tecnologia">
-                    <img src="images/java.png" alt="Imagen-Tecnologia" class="imagen-tecnologia">
-                    <p style="margin-left: 20px; margin-top: 10px;"><strong>Curso de Java y MySQL JDBC: Elaboración de un CRUD</strong></p>
-                </div>
-                <div class="entidad" style="margin-top: 10px;">
                     <img src="images/ow.jpg" alt="Imagen-Entidad" class="imagen-entidad">
-                    <p style="margin-left: 20px; margin-top: 20px; font-weight: bold;"><a href="https://openwebinars.net" target="_blank">OpenWebinars</a></p>
-                </div>    
-                <p style="margin-top: 28px;"><em>SQL · Java · Elaboración de un CRUD</em></p>
-                <a href="https://openwebinars.net/cert/zJHN" target="_blank" class="btn btn-primary btn-sm mt-3" style="margin-top: 17px !important;">
+                    <p style="margin-left: 20px; margin-top: 10px;">Curso de Java y MySQL JDBC: Elaboración de un CRUD</p>
+                </div>
+                <a href="https://openwebinars.net/cert/zJHN" target="_blank">
                     <i class="fas fa-download"></i> Credencial
                 </a>
             </div>
         </div>              
     </section>
+
     <section id="proyectos" class="seccion fade-in">
-        <h2 class="title-proyectos">PROYECTOS PROPIOS</h2>
+        <h2 class="title-proyectos">Proyectos</h2>
         <div class="proyectos">
             <div class="proyecto">
                 <img src="images/hungry_hero_logo.png" alt="Imagen-Aplicacion" class="imagen-aplicacion">
@@ -276,6 +295,7 @@
             </div>
         </div>
     </section>
+
     <section>
         <br>
         <center><p>©2024 Daniel Gutiérrez Baena. Todos los derechos reservados.</p></center>
