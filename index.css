@@ -253,6 +253,11 @@ p {
     margin-top: 15px;
 }
 @media (max-width: 768px) {
+    .text-sobre-mi{
+        padding: 0px;
+        font-size: 17px;
+    }
+
     .contenido-experiencia {
         flex-direction: column;
         align-items: center;
