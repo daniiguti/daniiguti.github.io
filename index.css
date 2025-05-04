@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.7); 
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -36,7 +36,7 @@ nav ul {
 nav a {
     text-decoration: none;
     font-weight: 600;
-    color: #5e5e5e;
+    color: #ccc5c5;
     transition: color 0.3s ease;
 }
 nav a:hover {
@@ -554,7 +554,7 @@ p {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.7); 
         display: none;
     }
 
