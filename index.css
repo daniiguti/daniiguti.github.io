@@ -22,6 +22,7 @@ header {
     background-color: rgba(0, 0, 0, 0.3); 
     backdrop-filter: blur(10px);
     z-index: 1000;
+    transition: top 0.3s ease-in-out;
 }
 nav ul {
     list-style: none;
@@ -238,17 +239,17 @@ p {
 }
 .empresa {
     text-align: left; 
-    font-size: 17px;
+    font-size: 18px;
 }
 .tiempo {
-    font-size: 17px;
+    font-size: 18px;
     font-style: italic;
     color: #555;
     margin-top: 5px;
     text-align: left;
 }
 .descripcion {
-    font-size: 16px;
+    font-size: 17px;
     text-align: justify;
     margin-top: 15px;
 }
@@ -264,14 +265,23 @@ p {
     }
   
     .content-box {
-        width: 95%;
+        width: 110%;
         margin-bottom: 30px;
     }
   
     .logo-trabajo {
         margin-left: 310px !important;
     }
-  }
+
+    .logo-trabajo {
+        position: absolute;
+        right: 40px;
+        top: 25px;
+        width: 60px;        
+        height: auto;        
+        border-radius: 50%; 
+    }
+}
 
 /* Sección Educación */
 .title-educacion{
@@ -279,7 +289,7 @@ p {
     margin-bottom: 50px;
 }
 .title-colegio {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
     text-align: center !important;
 }
@@ -293,7 +303,7 @@ p {
 }
 .instituto, .nota-media{
     text-align: left;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 /* Sección Habilidades */
