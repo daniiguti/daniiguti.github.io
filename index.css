@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.8); 
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -155,6 +155,19 @@ p {
     color: white; 
     animation: fadeIn 1.5s ease-out;
 }
+@keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+}
+@media (max-width: 768px) {
+    .little-icon {
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+  }
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -291,6 +304,7 @@ p {
     margin-bottom: 50px;
 }
 .title-colegio {
+    margin-top: 10px;
     font-size: 19px;
     font-weight: bold;
     text-align: center !important;
@@ -554,7 +568,7 @@ p {
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.7); 
+        background-color: rgba(0, 0, 0, 0.8); 
         display: none;
     }
 
