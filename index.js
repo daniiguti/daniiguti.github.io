@@ -5,28 +5,26 @@ function main() {
     const currentScroll = window.scrollY || document.documentElement.scrollTop;
     const header = document.getElementById("header");
     const contactoSection = document.getElementById("contacto");
-
-    if (!header || !contactoSection) return; 
-
+  
+    if (!header || !contactoSection) return;
+  
     const contactoTop = contactoSection.offsetTop;
     const contactoHeight = contactoSection.offsetHeight;
-    const isInDaniSection = currentScroll >= contactoTop && currentScroll <= contactoTop + contactoHeight;
-
-    if (isInDaniSection) {
-        header.style.top = "-100px"; // Mantener el header oculto en la sección .dani
+  
+    const isInOrAboveDaniSection = currentScroll <= contactoTop + contactoHeight;
+  
+    if (isInOrAboveDaniSection) {
+      header.style.top = "-100px"; // Nunca mostrar el header si estamos en o encima de .dani
     } else {
-        if (currentScroll > lastScrollTop) {
-            header.style.top = "-100px"; // Ocultar el header cuando se hace scroll hacia abajo
-        } else {
-            // Asegurarse de que el top esté exactamente en 0
-            if (parseInt(header.style.top) < 0) {
-                header.style.top = "0"; // Forzar el top a 0 si es menor a 0
-            }
-        }
+      if (currentScroll > lastScrollTop) {
+        header.style.top = "-100px"; // Scroll hacia abajo → ocultar
+      } else {
+        header.style.top = "0"; // Scroll hacia arriba → mostrar
+      }
     }
-
+  
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+  });
 
   const menuToggle = document.querySelector('.menu-toggle');
   const navList = document.querySelector('.nav-list');
