@@ -1,48 +1,28 @@
 function main() {
   let lastScrollTop = 0;
 
-  window.addEventListener("load", function() {
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
     const header = document.getElementById("header");
     const contactoSection = document.getElementById("contacto");
 
-    if (header && contactoSection) {
-        const contactoTop = contactoSection.offsetTop;
-        const contactoHeight = contactoSection.offsetHeight;
-        const currentScroll = window.scrollY || document.documentElement.scrollTop;
+    if (!header || !contactoSection) return; 
 
-        // Ocultar el header por defecto si estamos en la sección dani
-        if (currentScroll >= contactoTop && currentScroll <= contactoTop + contactoHeight) {
-            header.style.top = "-100px";
-            header.style.transition = 'none';  // Eliminar transición por defecto
+    const contactoTop = contactoSection.offsetTop;
+    const contactoHeight = contactoSection.offsetHeight;
+    const isInDaniSection = currentScroll >= contactoTop && currentScroll <= contactoTop + contactoHeight;
+
+    if (isInDaniSection) {
+        header.style.top = "-100px"; // Mantener el header oculto en la sección .dani
+    } else {
+        if (currentScroll > lastScrollTop) {
+            header.style.top = "-100px"; // Ocultar el header cuando se hace scroll hacia abajo
         } else {
-            header.style.transition = 'top 0.3s ease-in-out';  // Agregar la transición cuando no estamos en la sección dani
+            header.style.top = "0"; // Mostrar el header cuando se hace scroll hacia arriba
         }
     }
-  });
-  window.addEventListener("scroll", function () {
-      const currentScroll = window.scrollY || document.documentElement.scrollTop;
-      const header = document.getElementById("header");
-      const contactoSection = document.getElementById("contacto"); // Obtener la sección dani
 
-      if (!header || !contactoSection) return; 
-
-      const contactoTop = contactoSection.offsetTop;
-      const contactoHeight = contactoSection.offsetHeight;
-      const isInDaniSection = currentScroll >= contactoTop && currentScroll <= contactoTop + contactoHeight;
-
-      if (isInDaniSection) {
-          header.style.top = "-100px";
-          header.style.transition = 'none';  // Eliminar transición cuando estamos en la sección dani
-      } else {
-          if (currentScroll > lastScrollTop) {
-              header.style.top = "-100px"; 
-          } else {
-              header.style.top = "0"; 
-          }
-          header.style.transition = 'top 0.3s ease-in-out';  // Agregar transición cuando no estamos en la sección dani
-      }
-
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   });
 
   const menuToggle = document.querySelector('.menu-toggle');
