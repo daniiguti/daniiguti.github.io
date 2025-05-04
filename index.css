@@ -22,7 +22,6 @@ header {
     background-color: rgba(0, 0, 0, 0.3); 
     backdrop-filter: blur(10px);
     z-index: 1000;
-    transition: top 0.3s ease-in-out;
 }
 nav ul {
     list-style: none;
