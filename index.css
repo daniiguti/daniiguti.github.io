@@ -23,6 +23,9 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+header.with-transition {
+    transition: top 0.3s ease-in-out;
+}
 nav ul {
     list-style: none;
     display: flex;

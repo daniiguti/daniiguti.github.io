@@ -14,12 +14,14 @@ function main() {
     const isInOrAboveDaniSection = currentScroll <= contactoTop + contactoHeight;
   
     if (isInOrAboveDaniSection) {
-      header.style.top = "-100px"; // Nunca mostrar el header si estamos en o encima de .dani
+      header.style.top = "-100px";
+      header.classList.remove("with-transition"); // sin transición
     } else {
+      header.classList.add("with-transition"); // solo ahora activamos transición
       if (currentScroll > lastScrollTop) {
-        header.style.top = "-100px"; // Scroll hacia abajo → ocultar
+        header.style.top = "-100px";
       } else {
-        header.style.top = "0"; // Scroll hacia arriba → mostrar
+        header.style.top = "0";
       }
     }
   
