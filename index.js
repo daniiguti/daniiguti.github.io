@@ -18,12 +18,15 @@ function main() {
         if (currentScroll > lastScrollTop) {
             header.style.top = "-100px"; // Ocultar el header cuando se hace scroll hacia abajo
         } else {
-            header.style.top = "0"; // Mostrar el header cuando se hace scroll hacia arriba
+            // Asegurarse de que el top esté exactamente en 0
+            if (parseInt(header.style.top) < 0) {
+                header.style.top = "0"; // Forzar el top a 0 si es menor a 0
+            }
         }
     }
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  });
+});
 
   const menuToggle = document.querySelector('.menu-toggle');
   const navList = document.querySelector('.nav-list');
